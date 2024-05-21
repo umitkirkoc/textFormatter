@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Formatter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Text Formatter</h1>
+        <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+        <div>
+            <label>
+                <input type="radio" name="format" value="capitalize" checked> Capitalize Sentences
+            </label>
+            <label>
+                <input type="radio" name="format" value="uppercase"> Uppercase
+            </label>
+            <label>
+                <input type="radio" name="format" value="lowercase"> Lowercase
+            </label>
+            <label>
+                <input type="radio" name="format" value="removeSpaces"> Remove Extra Spaces
+            </label>
+        </div>
+        <button onclick="formatText()">Format Text</button>
+        <h2>Formatted Text</h2>
+        <div id="outputText"></div>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
